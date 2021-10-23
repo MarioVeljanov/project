@@ -19,4 +19,4 @@ document.write(answers);
 
 
 console.log(2==4 || 4 == 4);
-console.log("hello");
+console.log(10%2);
