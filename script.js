@@ -1,22 +1,21 @@
 "use strict.";
 
-/* alert('hello'); */
+const numberOfFilms = prompt("Колку филмови имаш изгледано?");
 
-/* const result = confirm("Are you here?");
-console.log(result); */
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+ 
+const a = prompt("Еден од последни гледани филмови?");
+const b = prompt("Kolku poeni?"); 
+const c = prompt("Еден од последни гледани филмови?");
+const d = prompt("Kolku poeni?");
 
-/* const answer = prompt("Do you have 15?", "");
-console.log(answer);
- */
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-const answers = [];
-
-answers[0] = prompt("What your name?");
-answers[1] = prompt("Where are you from?");
-answers[2] = prompt("How old are you?");
-
-document.write(answers);
-
-
-console.log(2==4 || 4 == 4);
-console.log(10%2);
+console.log(personalMovieDB);
